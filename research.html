@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <span class="navbar-brand" style="color:white">Emily Dolson - Computer Science, Ecology, and Evolution</span>
+              <span class="navbar-brand" style="color:white">Emily Dolson</span>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
@@ -57,33 +57,89 @@
 
       </div>
     </div>
-    <hr></hr>
-    <hr></hr>
-    <div class="container center-block">
+
+    <div class="container center-block" style="margin-top:40px">
       <h1>Research</h1>
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="container center-block">
-          <p>My research interests are focused on the intersection of computer science, ecology, and evolutionary biology. This involves doing <em>in silico</em> experiments to understand general properties of ecology and evolution, and using principles from biology to solve computational problems. Often these goals intersect. Many of my <em>in silico</em> experiments are carried out on the <a href="http://avida.devosoft.org/">Avida Digital Evolution Platform</a>, an open source research platform developed and maintained by the <a href="http://www.devolab.msu.edu">Devolab</a>. The primary theme uniting my research is that I am fascinated by how ecosystems evolve. This often leads me to ask questions about how evolutionary processes generate and maintain diversity, particularly in the presence of spatial structure.</p>
-          <p>Code for all of my projects is available on <a href="https://github.com/emilydolson">github</a>.</p>
+          <p>My research interests are focused on the intersection of computer science, ecology, and evolutionary biology. 
+            This involves doing <em>in silico</em> experiments to understand general properties of ecology and evolution, and using
+            principles from biology to solve computational problems. Often these goals intersect. Many of my <em>in silico</em> 
+            experiments are carried out on the <a href="http://avida.devosoft.org/">Avida Digital Evolution Platform</a>, an open 
+            source research platform developed and maintained by the <a href="http://www.devolab.msu.edu">Devolab</a>. The primary 
+            theme uniting my research is that I am fascinated by how evolution shapes and is shaped by ecological communities. 
+            This often leads me to ask questions about how evolutionary processes generate and maintain diversity, particularly in the presence of spatial structure.</p>
+          
           <p>Some specific projects that I&#8217;m currently working on include:</p>
-          <p><strong>Impact of evolution on reserve placement effect</strong></p>
-          <figure id="attachment_163" style="width: 300px;" class="wp-caption alignnone"><a href="http://cse.msu.edu/~dolsonem/wordpress/wp-content/uploads/2016/07/25patches_6each_pop10_kill500.png"><img src="http://cse.msu.edu/~dolsonem/wordpress/wp-content/uploads/2016/07/25patches_6each_pop10_kill500-300x300.png" alt="Phenotypes evolved in an environment with 25 6x6 reserves" width="300" height="300" class="size-medium wp-image-163" /></a><figcaption class="wp-caption-text">Phenotypes evolved in an environment with 25 6&#215;6 reserves</figcaption></figure>
-          <p>Most research on placing biological reserves (e.g. natural parks) in physical space has been based on the impact of different reserve configurations on short-term diversity fluctuations. However, one of the reasons that diversity is so important to conserve in the first place is to improve the chances that species will adapt to the changing environment. As such, the interaction between evolutionary processes and the diversity fluctuations under different reserve configurations is important to understand. Given the vast spatiotemporal scale on which these processes occur, relatively little research has been done on this topic thus far. We are using Avida to address these questions.</p>
-          <p><a href="https://github.com/emilydolson/conservationExperiment">Configuration files, analysis scripts, and source code for the first paper on this project are available here.</a></p>
-          <p><strong>Impact of patch shape on local adaptation</strong></p>
-          <p><a href="http://cse.msu.edu/~dolsonem/wordpress/wp-content/uploads/2016/07/5_12figure_11.png"><img src="http://cse.msu.edu/~dolsonem/wordpress/wp-content/uploads/2016/07/5_12figure_11-300x226.png" alt="5_12figure_1" width="300" height="226" class="alignnone size-medium wp-image-167" /></a></p>
-          <p>When a population is adapting to make use of a new feature of a landscape, that feature is usually distributed in a specific shape. How does this shape affect local adaptation to that feature? Do long and thin shapes facilitate adaptation more or less than more compact shapes? Landscape ecologists have developed a wide variety of ways of quantifying patch shapes, and we are using Avida to systematically test the effect of each on evolution.</p>
-          <p><strong>Resource Spatial Heterogeneity</strong></p>
-          <figure id="attachment_164" style="width: 300px;" class="wp-caption alignnone"><a href="http://cse.msu.edu/~dolsonem/wordpress/wp-content/uploads/2016/07/phenotype_niches_11097.png"><img src="http://cse.msu.edu/~dolsonem/wordpress/wp-content/uploads/2016/07/phenotype_niches_11097-300x300.png" alt="Phenotypes evolved in a spatially heterogenous environment in the Avida Digital Evolution Platform" width="300" height="300" class="size-medium wp-image-164" /></a><figcaption class="wp-caption-text">Phenotypes evolved in a spatially heterogenous environment in the Avida Digital Evolution Platform</figcaption></figure>
-          <p>A central question in ecology has long been how such a wide diversity of life can evolve within a seemingly limited set of niches. Many suspect that spatial heterogeneity is an important factor in making this possible, but this is a very challenging principle to test in biological populations. To try and understand whether spatial heterogeneity is a general driver of diversity, we are experimentally testing it in <a href="http://avida.devosoft.org/">Avida</a>.</p>
+          <h2 id="EC_ecology">Ecological communities in evolutionary computation <a href=https://github.com/emilydolson/ecology_of_evolutionary_computation><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
+          <figure>
+            <img src="images/interaction_networks.png" style="width:80%; display: block; margin-left: auto;margin-right: auto;">
+            <figcaption style="text-align: center"><em>Ecological interactions (blue is positive, red is negative) between members of a populaiton under various selection schemes from evolutionary computation.</em></figcaption>
+            <br>
+          </figure>
+          <p>Maintaining population diversity is critical to successfully solving challenging problems with evolutionary computation.
+            As a result, evolutionary computation researchers have come up with a variety of techniques for generating and maintaining diversity.
+            All of these techniques create ecological interactions between members of the population. By understanding how these techniques map
+            onto ecological scenarios in nature, we can import a vast number of results from evolutionary computation back into biology and vice versa.
+          </p>
+
+          <h2 id="eco_hints">Using ecology to provide hints to evolutionary computation<a href=https://github.com/emilydolson/eco-ea-box><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
+          <figure>
+            <img src="images/eco-ea-heatmaps.png" style="width:80%; display: block; margin-left: auto;margin-right: auto;">
+            <figcaption style="text-align: center"><em>Eco-EA is able to solve an otherwise too-challenging problem when it is given an adequate number of good hints (regardless of the number of bad hints it is given).
+              Lexicase, another algorithm that generates and maintains diversity by associating niches with different approaches to solving the problem, performs better when given perfect hints but is not resistant to bad hints.
+            </em></figcaption>
+            <br>
+          </figure>
+          <p>
+            Many of the most effective techniques for generating and maintaining diversity in evolutionary computation involve creating niches associated with 
+            different approaches to solving the problem. We can build on this technique by using niche creating as a tool for giving the algorithm "hints" about 
+            how it might be effective to solve a problem. Most attempts to give hints to machine learning algorithms are unsuccessful because humans are often 
+            very wrong about the best way to solve a problem. However, Eco-EA, an ecology-based evolutionary algorithm developed by 
+            <a href="https://scholar.google.com/citations?user=jRXbZO4AAAAJ">Sherri Goings</a> and <a href="https://ofria.com">Charles Ofria</a>, has an amazing
+            ability to ignore bad hints. We are studying the mechanisms behind this property and experimenting with using them to improve evolutionary computation.
+          </p>
+
+          <h2 id="oee">Understanding barriers to open-ended-evolution<a href=https://github.com/emilydolson/oee_alifexv><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
+          <figure>
+            <img src="images/Complexity_Barriers.png" style="width:100%; display: block; margin-left: auto;margin-right: auto;">
+            <figcaption style="text-align: center"><em>Our schematic outline of what things could get in the way of open-ended evolution. 
+              Explained <a href="http://devosoft.org/whats-holding-artificial-life-back-from-open-ended-evolution/">here in blog form</a> or <a href="https://youtu.be/vTV7SJUOzzQ?t=22m46s">here in the form of me giving a talk</a>.
+            </em></figcaption>
+            <br>
+          </figure>
+          <p>
+            Are there systematic differences between evolution in digital systems and evolution in nature? If so, it's important to know about them, both so that we 
+            can make sure insights from digital systems apply to natural systems in the way we expect, and so because the sources of such discrepancies are likely 
+            highly informative when it comes to understanding drivers of evolution. Research on open-ended evolution seeks to address these questions. We have put 
+            together a suite of metrics for understanding open-ended evolution, and are now in the process of applying them to various systems to see what we can learn. 
+          </p>
+
+          <!-- <h2 id="hotspots">Evolution in spatially heterogen<a href=https://github.com/emilydolson/evo_in_space><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
+          <figure>
+            <img src="images/Complexity_Barriers.png" style="width:100%; display: block; margin-left: auto;margin-right: auto;">
+            <figcaption style="text-align: center"><em>Our schematic outline of what things could get in the way of open-ended evolution. 
+              Explained <a href="http://devosoft.org/whats-holding-artificial-life-back-from-open-ended-evolution/">here in blog form</a> or <a href="https://youtu.be/vTV7SJUOzzQ?t=22m46s">here in the form of me giving a talk</a>.
+            </em></figcaption>
+            <br>
+          </figure>
+          <p>
+            Are there systematic differences between evolution in digital systems and evolution in nature? If so, it's important to know about them, both so that we 
+            can make sure insights from digital systems apply to natural systems in the way we expect, and so because the sources of such discrepancies are likely 
+            highly informative when it comes to understanding drivers of evolution. Research on open-ended evolution seeks to address these questions. We have put 
+            together a suite of metrics for understanding open-ended evolution, and are now in the process of applying them to various systems to see what we can learn. 
+          </p> -->
+          
+
+
         </div><!-- /.col-lg-4 -->
 
 
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Emily Dolson &middot;</p>
+        <p>&copy; 2018 Emily Dolson &middot;</p>
       </footer>
 
     </div><!-- /.container -->
