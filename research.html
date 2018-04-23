@@ -75,13 +75,16 @@
           <h2 id="EC_ecology">Ecological communities in evolutionary computation <a href=https://github.com/emilydolson/ecology_of_evolutionary_computation><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
           <figure>
             <img src="images/interaction_networks.png" style="width:80%; display: block; margin-left: auto;margin-right: auto;">
-            <figcaption style="text-align: center"><em>Ecological interactions (blue is positive, red is negative) between members of a populaiton under various selection schemes from evolutionary computation.</em></figcaption>
+            <figcaption style="text-align: center"><em>Ecological interactions (blue is positive, red is negative) between members of a population under various selection schemes from evolutionary computation.</em></figcaption>
             <br>
           </figure>
           <p>Maintaining population diversity is critical to successfully solving challenging problems with evolutionary computation.
             As a result, evolutionary computation researchers have come up with a variety of techniques for generating and maintaining diversity.
             All of these techniques create ecological interactions between members of the population. By understanding how these techniques map
             onto ecological scenarios in nature, we can import a vast number of results from evolutionary computation back into biology and vice versa.
+          </p>
+          <p>
+            Preliminary work is presented <a href="pdfs/ecological-theory-insights.pdf">here</a>, and more in depth analysis is forthcoming (feel free to get in touch if you want more details now!).
           </p>
 
           <h2 id="eco_hints">Using ecology to provide hints to evolutionary computation<a href=https://github.com/emilydolson/eco-ea-box><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
@@ -98,7 +101,7 @@
             how it might be effective to solve a problem. Most attempts to give hints to machine learning algorithms are unsuccessful because humans are often 
             very wrong about the best way to solve a problem. However, Eco-EA, an ecology-based evolutionary algorithm developed by 
             <a href="https://scholar.google.com/citations?user=jRXbZO4AAAAJ">Sherri Goings</a> and <a href="https://ofria.com">Charles Ofria</a>, has an amazing
-            ability to ignore bad hints. We are studying the mechanisms behind this property and experimenting with using them to improve evolutionary computation.
+            ability to ignore bad hints. We are <a href="pdfs/applying-ecological-principles.pdf">studying</a> the mechanisms behind this property and experimenting with using them to improve evolutionary computation.
           </p>
 
           <h2 id="oee">Understanding barriers to open-ended-evolution<a href=https://github.com/emilydolson/oee_alifexv><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
@@ -114,23 +117,44 @@
             can make sure insights from digital systems apply to natural systems in the way we expect, and so because the sources of such discrepancies are likely 
             highly informative when it comes to understanding drivers of evolution. Research on open-ended evolution seeks to address these questions. We have put 
             together a suite of metrics for understanding open-ended evolution, and are now in the process of applying them to various systems to see what we can learn. 
-          </p>
+            We have <a href="pdfs/identifying-components-open.pdf">begun applying these metrics</a>  to simple evolving systems.
+          </p>           
 
-          <!-- <h2 id="hotspots">Evolution in spatially heterogen<a href=https://github.com/emilydolson/evo_in_space><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
+          <h2 id="lineages">Understanding long term evolutionary dynamics through lineages and phylogenies<a href=https://github.com/stevenjson/ALife2018-Lineage><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a> <a href=https://github.com/emilydolson/fitness_landscape_visualizations><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
           <figure>
-            <img src="images/Complexity_Barriers.png" style="width:100%; display: block; margin-left: auto;margin-right: auto;">
-            <figcaption style="text-align: center"><em>Our schematic outline of what things could get in the way of open-ended evolution. 
-              Explained <a href="http://devosoft.org/whats-holding-artificial-life-back-from-open-ended-evolution/">here in blog form</a> or <a href="https://youtu.be/vTV7SJUOzzQ?t=22m46s">here in the form of me giving a talk</a>.
-            </em></figcaption>
+            <img src="images/spatialphylogeny.png" style="width:100%; display: block; margin-left: auto;margin-right: auto;">
+            <figcaption style="text-align: center"><em>A phylogeny color-coded by each individual's position in the world, demonstrating the spatial dynamics of the evolving population. Interactive version <a href=https://emilydolson.github.io/visualizations/spatial_lineage/LineageViz.html>available here</a>.</em></figcaption>
             <br>
           </figure>
           <p>
-            Are there systematic differences between evolution in digital systems and evolution in nature? If so, it's important to know about them, both so that we 
-            can make sure insights from digital systems apply to natural systems in the way we expect, and so because the sources of such discrepancies are likely 
-            highly informative when it comes to understanding drivers of evolution. Research on open-ended evolution seeks to address these questions. We have put 
-            together a suite of metrics for understanding open-ended evolution, and are now in the process of applying them to various systems to see what we can learn. 
-          </p> -->
+            In an effort to understand the short-term effects that add up to produce long-term evolutionary dynamics, we have been working on ways to summarize and quantify the behavior of individual lineages.
+            This includes <a href=https://peerj.com/preprints/26883/>a suite of quantitative metrics</a>, and a three-dimensional visualization (<a href="pdfs/vr_fitness_landscape.pdf">described here</a>, 
+            <a href="https://emilydolson.github.io/fitness_landscape_visualizations/">viewable here</a>).
+          </p> 
+
+          <h2 id="hotspots">Evolution in spatially heterogenous environments <a href=https://github.com/emilydolson/evo_in_space><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
+          <figure>
+            <img src="images/50065_all_hotspots.png" style="width:100%; display: block; margin-left: auto;margin-right: auto;">
+            <figcaption style="text-align: center"><em>Hotspots of evolutionary potential in four spatially heterogenous enviroments.</em></figcaption>
+            <br>
+          </figure>
+          <p>
+            How do spatially heterogenous environments impact the way populations traverse fitness landscapes? Do some regions of the environment guide the population into more evolvable areas of the fitness landscape?
+            If so, we would expect to see that there are some regions of space where a new trait is more likely to first appear than we would expect by chance. Using Avida, I <a href="pdfs/evolutionary_hotspots.pdf">found</a> that such evolutionary hotspots
+            do indeed occur. This work builds on my <a href="https://www.biorxiv.org/content/early/2017/06/12/148973">prior research</a> on the effect of spatial heterogeneity on eco-evolutionary dynamics.
+          </p>
           
+          <h2 id="reserve">Interactions between evolution and reserve placement <a href=https://github.com/emilydolson/conservationExperiment><img src="images/GitHub-Mark.png" style="height:30px;vertical-align:middle;"></a></h2>
+          <figure>
+            <img src="images/phenotype_niches_circlesconservation-25patches_6each_environment.png" style="width:100%; display: block; margin-left: auto;margin-right: auto;">
+            <figcaption style="text-align: center"><em>Phenotypes preserved over evolutionary time across multiple reserves.</em></figcaption>
+            <br>
+          </figure>
+          <p>
+            When we place reserves for conservation purposes, we are determining the spatial structure of the population going forward, something which is known to have strong impacts on evolutionary dynamics.
+            However, most conservation biology research does not study evolutionary effects, because of the broad temporal scale this would require. We are <a href="pdfs/evolution_reserve_placement.pdf">using Avida to explore</a> the interactions between 
+            evolution and reserve placement decisions.
+          </p>
 
 
         </div><!-- /.col-lg-4 -->
