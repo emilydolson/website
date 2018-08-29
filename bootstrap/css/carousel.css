@@ -146,3 +146,7 @@ body {
     margin-top: 120px;
   }
 }
+
+.tooltip-inner {
+  max-width: 1000px; /* the minimum width */
+}
